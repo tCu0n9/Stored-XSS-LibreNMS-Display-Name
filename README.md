@@ -6,7 +6,7 @@
 XSS on the parameters (Replace $DEVICE_ID with your specific $DEVICE_ID value):`/device/$DEVICE_ID/edit` -> param: display
 
 
-of Librenms version 24.10.0 ([https://github.com/librenms/librenms](https://github.com/librenms/librenms)) allows remote attackers to inject malicious scripts. When a user views or interacts with the page displaying the data, the malicious script executes immediately, leading to potential unauthorized actions or data exposure.
+of Librenms versions 24.9.0 and 24.10.0 ([https://github.com/librenms/librenms](https://github.com/librenms/librenms)) allows remote attackers to inject malicious scripts. When a user views or interacts with the page displaying the data, the malicious script executes immediately, leading to potential unauthorized actions or data exposure.
 
 
 **Proof of Concept:**
