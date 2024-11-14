@@ -27,7 +27,12 @@ of Librenms versions 24.9.0 and 24.10.0 ([https://github.com/librenms/librenms](
 - on the "/apps" path:
 ![Screenshot from 2024-11-06 09-42-05](https://github.com/user-attachments/assets/4bd39e1e-6c60-4cc5-b922-8db7fc8094fc)
 
+**Additional PoC:**
+1. In the "Display Name" field, enter the following payload: `"><img src onerror="alert(1)">`.
+![image](https://github.com/user-attachments/assets/addb1b00-23b1-4c26-8ac7-494cb24ebe8a)
 
+2. The XSS vulnerability is triggered when accessing the "/ports" path, and the payload executes when hovering over the modified value in the "Port" field.
+![image](https://github.com/user-attachments/assets/446e0d62-2016-4435-a1eb-fe85079498e4)
 
 **Impact:**
 
